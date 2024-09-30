@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     color: black;
+    background-color: #c0c0c0;
 }
 /* Estiliza o header da página */
 header {
@@ -29,8 +30,8 @@ header p {
 #apresentacaoVH {
     text-align: center; /* Alinha o texto ao centro */
     padding: 50px;
-    background-color: #b58500; /* Cor de fundo suave */
-    border: 3px solid #1565c0;
+    background-color: #c0c0c0; /* Cor de fundo suave */
+    /*border: 3px solid #1565c0;*/
 }
 
 #apresentacaoVH h1 {
@@ -50,7 +51,7 @@ header p {
     grid-template-columns: repeat(2, 430px); /* 2 colunas de igual largura */
     grid-gap: 10px; /* Espaçamento horizontal e vertical entre as caixas */
     padding: 20px;
-    background-color: #b58500;
+    background-color: #c0c0c0;
     margin-bottom: 50px;
     justify-content: center; /* Centraliza as colunas */
 }
