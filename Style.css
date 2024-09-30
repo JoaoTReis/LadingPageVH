@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+/* Estiliza o header da página */
+header {
+    display: flex; /* Organiza os itens em linha */
+    justify-content: space-around; /* Espaça igualmente os itens */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    padding: 10px;
+    background-color: rgb(2, 3, 65); /* Cor de fundo clara para o header */
+}
+
+header div {
+    display: flex; /* Organiza imagem e texto em linha */
+    align-items: center;
+}
+
+header img {
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+
+header p {
+    margin: 0; /* Remove margens padrão do parágrafo */
+}
+
+/* Estiliza a seção de apresentação */
+#apresentacaoVH {
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 50px;
+    background-color: #b58500; /* Cor de fundo suave */
+    border: 3px solid #1565c0;
+}
+
+#apresentacaoVH h1 {
+    margin: 0; /* Remove margens padrão */
+    font-size: 2em; /* Tamanho da fonte */
+}
+
+#apresentacaoVH p {
+    font-size: 1.2em; /* Tamanho da fonte do parágrafo */
+    color: #333; /* Cor do texto */
+}
+
+
+/* Estiliza a seção de serviços com Grid */
+#servicos {
+    display: grid;
+    grid-template-columns: repeat(2, 430px); /* 2 colunas de igual largura */
+    grid-gap: 10px; /* Espaçamento horizontal e vertical entre as caixas */
+    padding: 20px;
+    background-color: #b58500;
+    margin-bottom: 50px;
+    justify-content: center; /* Centraliza as colunas */
+}
+
+#servicos h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    grid-column: span 2; /* Faz o título ocupar toda a largura */
+}
+
+/* Estilo padrão para todas as caixas de ação */
+.acao1, .acao2, .acao3, .acao4, .acao5 {
+    background-color: rgb(2, 3, 65);
+    border: 1px solid #1565c0;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Garante que as caixas tenham a mesma largura */
+    max-width: 400px; /* Largura máxima para as caixas */
+    text-align: center; /* Centraliza o conteúdo nas caixas */
+    justify-self: center; /* Centraliza cada caixa dentro de sua célula */
+}
+
+
+/* Configura a caixa 5 para ocupar toda a largura da última linha */
+.acao5 {
+    grid-column: 1 / -1; /* Centraliza a caixa ocupando o centro */
+    justify-self: center; /* Centraliza a caixa na linha */
+    width: 100%; /* Garante que a caixa não ultrapasse o tamanho das outras */
+    max-width: 400px; /* Define uma largura máxima para manter o alinhamento */
+}
+/* Diferenciação das cores do título de cada caixa */
+.acao1, .acao2, .acao3, .acao4, .acao5 h3 { color: #1565c0; }
+
+
+/* Estilo para os botões */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estiliza o footer da página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(2, 3, 65);
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Estiliza a seção principal */
+#InventárioEPlanejamentoSucessório {
+    padding: 20px;
+    background-color: #e2e2e2; /* Cor de fundo suave */
+    margin: 10px;
+    border-radius: 5px; /* Canto arredondado */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve para profundidade */
+}
+
+#InventárioEPlanejamentoSucessório h1 {
+    font-size: 1.8em; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+#InventárioEPlanejamentoSucessório p {
+    font-size: 1em; /* Tamanho da fonte do parágrafo */
+    color: #333; /* Cor do texto */
+}
+
+p{
+    color: white;
+}
