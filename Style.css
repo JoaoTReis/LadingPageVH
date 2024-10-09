@@ -162,6 +162,7 @@ header p {
 /*Estilo de cada acao*/
 .acoes {
     display: grid;
+    grid-template-columns: 1fr; /* Define uma coluna */
     grid-gap: 10px; /* Espaçamento horizontal e vertical entre as caixas */
     padding: 20px;
     background-color: black;
@@ -169,14 +170,14 @@ header p {
     justify-content: center; /* Centraliza as colunas */
 }
 
-.acoes h1{
+.acoes h1 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
     color: white;
 }
 
-.acoes h2{
+.acoes h2 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
@@ -184,25 +185,50 @@ header p {
     grid-column: span 2; /* Faz o título ocupar toda a largura */
 }
 
-.acao-descricao{
+.acao-descricao {
     background-color: rgb(2, 3, 65);
     border: 1px solid #1565c0;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Garante que as caixas tenham a mesma largura */
-    max-width: 500px; /* Largura máxima para as caixas */
-    text-align: center; /* Centraliza o conteúdo nas caixas */
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
     justify-self: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo dentro da div */
 }
 
-.video-custom{
-    
-    align-items: center;
+.video-custom {
+    margin-bottom: 15px;
+    max-width: 1000px; /* Ajuste conforme necessário */
+    height: auto;
 }
 
+.video-custom iframe {
+    width: 100%; /* Garante que o vídeo utilize toda a largura da div */
+    max-width: 100%; /* Limita a largura máxima do vídeo */
+    height: auto; /* Mantém a proporção do vídeo */
+    aspect-ratio: 16 / 9; /* Mantém a proporção de aspecto 16:9 (ou ajuste conforme necessário) */
+}
 
-.btn-paginaPrincipal{
+.btn-intro-acoes {
+    display: inline-flex;          
+    align-items: center; 
+    justify-content: center;
+    padding: 10px 20px; 
+    color: #fff; 
+    background-color: #1565c0;
+    border: 1px solid #1565c0; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    margin-top: 10px;
+    text-decoration: none;  
+}
+
+.btn-paginaPrincipal {
     display: inline-block;
     max-width: 200px;
     justify-self: center;
@@ -215,6 +241,8 @@ header p {
     margin-top: 10px;
     text-align: center;    
 }
+
+
 
 /* Estilo para os botões */
 .btn {
