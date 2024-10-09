@@ -7,7 +7,8 @@
 body {
     font-family: Arial, sans-serif;
     color: black;
-    background-color: #c0c0c0;
+    background-color: black;
+    
     width: 100%;
     height: 100%;
 }
@@ -18,6 +19,7 @@ header {
     align-items: center; /* Alinha os itens verticalmente no centro */
     padding: 10px;
     background-color: rgb(2, 3, 65); /* Cor de fundo clara para o header */
+    border-bottom: 1px solid #1565c0;
 }
 
 header div {
@@ -38,18 +40,79 @@ header p {
 #apresentacaoVH {
     text-align: center; /* Alinha o texto ao centro */
     padding: 50px;
-    background-color: #c0c0c0; /* Cor de fundo suave */
+    background-color: black; /* Cor de fundo suave */
     /*border: 3px solid #1565c0;*/
 }
 
 #apresentacaoVH h1 {
     margin: 0; /* Remove margens padrão */
     font-size: 2em; /* Tamanho da fonte */
+    color: white;
 }
 
 #apresentacaoVH p {
     font-size: 1.2em; /* Tamanho da fonte do parágrafo */
-    color: #333; /* Cor do texto */
+    color: white; /* Cor do texto */
+}
+
+#apresentacaoPessoal {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Uma coluna para ocupar a largura total */
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: rgb(2, 3, 65);
+    border: 1px solid #1565c0;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* Ocupará 90% da largura da tela */
+    max-width: 900px; /* Largura máxima da box */
+    min-width: 600px; /* Largura mínima da box */
+    margin-left: auto; /* Centraliza a box */
+    margin-right: auto; /* Centraliza a box */
+}
+
+
+#apresentacaoPessoal h3 {
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+#apresentacaoPessoal img {
+    width: 100%;
+    max-width: 500px; /* Ajuste para que a imagem não fique muito grande */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#apresentacaoPessoal div {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Box interna para a descrição profissional */
+.descricaoProfissional {
+    background-color: #3428e9;
+    border: 1px solid #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    width: 100%; /* Ocupará 90% da largura da box pai */
+    max-width: 800px; /* Largura máxima da box */
+    min-width: 500px; /* Largura mínima da box */
+    height: 350px;
+    margin-left: auto; /* Centraliza a box */
+    margin-right: auto; /* Centraliza a box */
+}
+
+.descricaoProfissional p {
+    color: white;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
 
@@ -59,7 +122,7 @@ header p {
     grid-template-columns: repeat(2, 430px); /* 2 colunas de igual largura */
     grid-gap: 10px; /* Espaçamento horizontal e vertical entre as caixas */
     padding: 20px;
-    background-color: #c0c0c0;
+    background-color: black;
     margin-bottom: 50px;
     justify-content: center; /* Centraliza as colunas */
 }
@@ -68,7 +131,7 @@ header p {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
-    color: #333;
+    color: white;
     grid-column: span 2; /* Faz o título ocupar toda a largura */
 }
 
@@ -101,9 +164,16 @@ header p {
     display: grid;
     grid-gap: 10px; /* Espaçamento horizontal e vertical entre as caixas */
     padding: 20px;
-    background-color: #c0c0c0;
+    background-color: black;
     margin-bottom: 50px;
     justify-content: center; /* Centraliza as colunas */
+}
+
+.acoes h1{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
 }
 
 .acoes h2{
@@ -184,9 +254,9 @@ header p {
 /* Estiliza o footer da página */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background-color: rgb(2, 3, 65);
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #1565c0;
 }
 
 footer p {
@@ -200,6 +270,13 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.responsabilidade-civil {
+    color: #fff; /* Cor do texto */
+    margin: 15px 0; /* Espaçamento acima e abaixo */
+    text-align: center; /* Alinha o texto à esquerda */
+    font-size: 10px;
 }
 
 
@@ -224,4 +301,103 @@ footer a:hover {
 
 p{
     color: white;
+}
+/* CSS para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Estilo global */
+    body {
+        font-size: 1em;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Header */
+    header {
+        flex-direction: column; /* Organiza os itens em coluna */
+        text-align: center;
+    }
+
+    header div {
+        flex-direction: column; /* Organiza imagem e texto em coluna */
+        align-items: center;
+    }
+
+    header img {
+        margin-bottom: 5px; /* Espaço entre a imagem e o texto */
+        width: 50px; /* Ajuste de tamanho da imagem no celular */
+    }
+
+    /* Apresentação */
+    #apresentacaoVH {
+        padding: 20px;
+    }
+
+    #apresentacaoVH h1 {
+        font-size: 1.8em;
+    }
+
+    #apresentacaoVH p {
+        font-size: 1em;
+    }
+
+    /* Apresentação pessoal */
+    #apresentacaoPessoal {
+        grid-template-columns: 1fr; /* Apenas uma coluna no celular */
+        padding: 10px;
+        min-width: unset; /* Remove o limite mínimo de largura */
+    }
+
+    #apresentacaoPessoal img {
+        max-width: 300px; /* Ajusta o tamanho máximo da imagem */
+    }
+
+    /* Descrição profissional */
+    .descricaoProfissional {
+        padding: 15px;
+        min-width: unset; /* Remove o limite mínimo de largura */
+        height: auto; /* Ajuste automático da altura */
+        width: 100%;
+    }
+
+    /* Seção de serviços */
+    #servicos {
+        grid-template-columns: 1fr; /* Uma coluna no celular */
+        gap: 10px;
+        padding: 10px;
+    }
+
+    /* Estilo das caixas de ação */
+    .acao1, .acao2, .acao3, .acao4, .acao5 {
+        grid-column: 1 / -1; /* Ocupa uma coluna */
+        justify-self: centers;
+        width: 90%;
+        max-width: 100%; /* Ajuste para ocupar toda a largura disponível */
+    }
+
+    /* Seção de ações */
+    .acoes {
+        padding: 10px;
+    }
+
+    .acao-descricao {
+        max-width: 100%; /* Ajuste de largura */
+        padding: 10px;
+    }
+
+    /* Botões */
+    .btn-paginaPrincipal, .btn-intro, .btn {
+        max-width: 100%; /* Botões ocupam toda a largura disponível */
+        padding: 10px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px;
+    }
+
+    .responsabilidade-civil {
+        font-size: 0.8em; /* Texto menor para celular */
+    }
 }
